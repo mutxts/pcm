@@ -1,11 +1,12 @@
 name: pcm
-version: 202001
+version: 202001.1
 
 build: |
   make
   install *.x bin/
 
   install *.h include/pcm/
+  install exceptions include/pcm/
 
   cd pcm.so
   make
